@@ -1,0 +1,10 @@
+; SLIME 2.23
+CL-USER> (defun sum (numbers)
+           (if (null numbers)
+               0
+               (+ (first numbers) (sum (rest numbers)))))
+SUM
+CL-USER> (sum '(1 2 3
+                ))
+6
+CL-USER> 
